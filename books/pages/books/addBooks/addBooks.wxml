@@ -1,0 +1,29 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="section" >
+  <view class="section__title">日期 :</view>
+  <picker class="picker" mode="date" value="{{date}}" bindchange="bindDateChange" >
+    <view class="picker">
+       {{date}}
+    </view>
+  </picker>
+</view>
+  <view class="section">
+    <view class="section__title">金额 : </view>
+    <input type="digit" class="input"  name="money" confirm-type="done" placeholder="金额"/>
+  </view>
+  <view class="section">
+   <view class="section__title">商品 </view>
+   <textarea class="input"  name="goods" placeholder="请输入商品">
+ 
+   </textarea>
+  </view>
+
+
+  <view class="btn-area"> 
+    <button class="submit_button" formType="submit">提交</button>
+    <button class="reset_button" formType="reset">重置</button>
+  </view>
+</form>
+<view wx:if="{{isSubmit}}">
+  {{warn ? warn : "是否公开信息："+isPub+"，手机号："+phone+"，密码："+pwd+"，性别："+sex}}
+</view>

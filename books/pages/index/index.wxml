@@ -1,0 +1,15 @@
+
+<view class="mian">
+<view class="out">
+   <image src="/images/add_books.jpg" bindtap="addBooks" mode="widthFix"></image>
+   <view class="txt">添加帐单</view>
+</view>
+<view class="out">
+   <image src="/images/add_books.jpg" mode="widthFix"></image>
+   <view class="txt">账单查看</view>
+</view>
+<view class="out">
+   <image src="/images/add_books.jpg" mode="widthFix"></image>
+   <view class="txt">我的账单</view>
+</view>
+</view>
